@@ -1951,6 +1951,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/lib\/imgs\/logo_v4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14990,
+		"inputAbbreviatedPath": "\/lib\/imgs\/logo_v4.png",
+		"outputAbbreviatedPath": "\/lib\/imgs\/logo_v4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/lib\/imgs\/sd-skyline.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/lib\/imgs\/sd-skyline.png",
+		"outputAbbreviatedPath": "\/lib\/imgs\/sd-skyline.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/lib\/imgs\/to-edit\/sd-skyline.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 964412,
+		"inputAbbreviatedPath": "\/lib\/imgs\/to-edit\/sd-skyline.jpg",
+		"outputAbbreviatedPath": "\/lib\/imgs\/to-edit\/sd-skyline.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/lib\/scss\/global.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

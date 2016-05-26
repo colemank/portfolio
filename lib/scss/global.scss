@@ -6,7 +6,15 @@ $bwhite:grey;
 $secheight:500px;
 $navheight:100px;
 html, body{background:$bwhite; margin:0; padding:0; height:100%; width:100%;}
-nav{@include span-columns(12);position:relative;height:100px; width:100%; background:white; -webkit-box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);-moz-box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);
+h1 { font-family: helvetica; color: white; padding:36px 0 36px 0; margin:0;}
+h3 {font-family:lato; color: black;}
+
+.home-container{
+	position:fixed; height:100%; width:100%;
+}
+// -------------- NAVIGATION
+
+nav{@include span-columns(12);z-index:1;position:fixed;height:100px; width:100%; background:white; -webkit-box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);-moz-box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);box-shadow: 0px 14px 89px 12px rgba(0,0,0,0.75);
 	.logo{
 		@include span-columns(4);
 		padding-left: 2%;
@@ -34,11 +42,192 @@ nav{@include span-columns(12);position:relative;height:100px; width:100%; backgr
 		}
 	}
 }
-section{height:400px;}
-h1 { font-family: helvetica; color: white; padding:36px 0 36px 0; margin:0;}
-h3 {font-family:lato; color: black;}
-.wrapper {
-@include span-columns(12);
-.primary { @include span-columns(8); }
-.secondary { @include span-columns(4); }
+// ----------------TOP SECTION
+
+.hero-wrapper {@include span-columns(12); position:relative; min-height:100%; min-width:100%;background-image: url("/lib/imgs/sd-skyline.png"); background-size: 100%; background-repeat:no-repeat;overflow:hidden; display: -webkit-flex; display: flex; margin-top:100px;
 }
+.primary-title{ @include span-columns(12);width:100%; position:relative; display: -webkit-flex; display: flex; justify-content:center;}
+.secondary-title {  position:relative; display: -webkit-flex; display: flex;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
