@@ -1940,6 +1940,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/lib\/imgs\/logo-_v2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12572,
+		"inputAbbreviatedPath": "\/lib\/imgs\/logo-_v2.png",
+		"outputAbbreviatedPath": "\/lib\/imgs\/logo-_v2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/lib\/scss\/global.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1986,7 +1997,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "sass-practice",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_gray"
 	},
 "projectSettings": {
