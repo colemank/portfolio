@@ -102,7 +102,7 @@ nav {
   width: 100%;
   position: relative;
   min-height: 100%;
-  background-image: url("/lib/imgs/sd-skyline.png");
+  background-image: url("..//imgs/sd-skyline.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -131,7 +131,7 @@ nav {
   align-items: center;
   height: 250px;
   width: 500px;
-  background-image: url("/lib/imgs/hero-name.png");
+  background-image: url("..//imgs/hero-name.png");
   background-size: contain;
   transition: .5s; }
   .title-style:hover {
@@ -196,7 +196,7 @@ section {
       position: relative;
       height: 300px;
       width: 300px;
-      background-image: url("/lib/imgs/headshot.png");
+      background-image: url("..//imgs/headshot.png");
       background-size: cover; }
       @media (max-width: 768px) {
         section .left-col .prof-pic {
@@ -232,17 +232,17 @@ section {
         align-items: center; }
         section .right-col:last-child {
           margin-right: 0; } }
-    section .right-col p {
+    section .right-col .about-me p {
       position: relative;
       color: white;
       font-family: Helvetica, Lato, sans-serif;
       line-height: 2em; }
       @media (max-width: 768px) {
-        section .right-col p {
+        section .right-col .about-me p {
           line-height: 1.5em;
           margin: 0 25px 0 25px;
           text-align: center; } }
       @media (max-width: 540px) {
-        section .right-col p {
+        section .right-col .about-me p {
           line-height: 1.2em;
           bottom: 10px; } }

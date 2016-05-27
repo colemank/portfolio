@@ -126,7 +126,7 @@ nav{
 .hero-wrapper {
 	@include span-columns(12); 
 	position:relative; min-height:100%; 
-	background-image: url("/lib/imgs/sd-skyline.png"); 
+	background-image: url("..//imgs/sd-skyline.png"); 
 	background-size: cover; 
 	background-repeat:no-repeat;
 	overflow:hidden;margin-top:100px;display: flex; }
@@ -144,7 +144,7 @@ nav{
 	align-items:center; 
 	height:250px; 
 	width:500px; 
-	background-image:url("/lib/imgs/hero-name.png"); 
+	background-image:url("..//imgs/hero-name.png"); 
 	background-size:contain;
 	transition:.5s;
 		&:hover{
@@ -201,17 +201,17 @@ section{
 			position:relative; 
 			height: 300px; 
 			width:300px; 
-			background-image: url("/lib/imgs/headshot.png"); 
+			background-image: url("..//imgs/headshot.png"); 
 			background-size:cover; 
-		@media (max-width: 768px) {
-			width: 200px !important;
-			height: 200px !important;
-			top: 15px;
-		}
-		@media (max-width: 540px) {
-			width: 150px !important;
-			height: 150px !important;
-		}	
+			@media (max-width: 768px) {
+				width: 200px !important;
+				height: 200px !important;
+				top: 15px;
+			}
+			@media (max-width: 540px) {
+				width: 150px !important;
+				height: 150px !important;
+			}	
 		}
 	}
 	.right-col{
@@ -229,30 +229,25 @@ section{
 			justify-content:left;
 			align-items:center;
 		}
-		p{
-			position:relative;
-			color: white;
-			font-family: $fontstack;
-			line-height: 2em;
+		.about-me{
 
-			@media (max-width: 768px) {
-			line-height: 1.5em;
-			margin: 0 25px 0 25px;
-			text-align:center;
-			}
-			@media (max-width: 540px) {
-			line-height: 1.2em;
-			bottom:10px;
+			p{
+				position:relative;
+				color: white;
+				font-family: $fontstack;
+				line-height: 2em;
+
+				@media (max-width: 768px) {
+				line-height: 1.5em;
+				margin: 0 25px 0 25px;
+				text-align:center;
+				}
+				@media (max-width: 540px) {
+				line-height: 1.2em;
+				bottom:10px;
+				}
 			}
 		}
-		// @media (max-width: 768px) {
-		// 	width: 400px !important;
-		// 	height: 200px !important;
-		// }
-		// @media (max-width: 540px) {
-		// 	width: 300px !important;
-		// 	height: 150px !important;
-		// }	
 	}
 }
 
