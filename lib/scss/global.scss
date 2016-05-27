@@ -1,10 +1,46 @@
+// ----------------------------------------------------------LIBRARY IMPORTS
+
 @import "bourbon";
 @import "neat/neat";
+
+
 $fontstack: Helvetica, Lato, sans-serif;
 $primary-color:#000;
 $bwhite:grey;
-$secheight:500px;
-$navheight:100px;
+$break-small: 540px;
+$break-medium: 720px;
+$break-large:920px;
+// ----------------------------------------------------------BREAKPOINT SYNTAX
+//        .profile-pic {
+//           float: left;
+//           width: 250px;
+//           @media screen and (max-width: $break-small) {
+//             width: 100px;
+//             float: none;
+//           }
+//           @media screen and (min-width: $break-large) {
+//             float: right;
+//           }
+//         }
+// ----------------------------------------------------------COMPILES TO
+//        profile-pic {
+//          float: left;
+//          width: 250px;
+//        }
+//        @media screen and (max-width: 320px) {
+//          .profile-pic {
+//            width: 100px;
+//            float: none;
+//          }
+//        }
+//        @media screen and (min-width: 1200px) {
+//          .profile-pic {
+//            float: right;
+//          }
+//        }
+
+// ----------------------------------------------------------MAIN STYLES
+
 html, body{background:$bwhite; 
 		   margin:0; 
 		   padding:0; 
@@ -24,7 +60,7 @@ h3 {font-family:lato; color: black;}
 	height:100%; 
 	width:100%;
 }
-// -------------- NAVIGATION
+// ----------------------------------------------------------NAVIGATION
 
 nav{
 	@include span-columns(12);
@@ -72,9 +108,12 @@ nav{
 				a{
 					color: black;
 					text-decoration: none;
+					transition: .5s;
 					&:hover{
 						color: #00637C;
 						text-shadow:0px 5px 10px black;
+						-webkit-transition-timing-function: cubic-bezier(0.42,0,0.58,1);
+						transition-timing-function: cubic-bezier(0.42,0,0.58,1);
 						transition: .5s;
 					}
 				}
@@ -82,7 +121,7 @@ nav{
 		}
 	}
 }
-// ----------------TOP SECTION
+// ----------------------------------------------------------TOP SECTION
 
 .hero-wrapper {
 	@include span-columns(12); 
@@ -99,15 +138,30 @@ nav{
 	align-items: center; 
 	justify-content: center; }
 .title-style{
-	position:relative;display: flex; 
+	position:relative;
+	display: flex; 
 	justify-content: center; 
 	align-items:center; 
-	height:150px; 
-	width:300px; 
+	height:250px; 
+	width:500px; 
 	background-image:url("/lib/imgs/hero-name.png"); 
-	background-size:contain;}
+	background-size:contain;
+	transition:.5s;
+		&:hover{
+			opacity: .6;
+			transition:.5s;
+		}
+		@media (max-width: 768px) {
+			width: 400px !important;
+			height: 200px !important;
+		}
+		@media (max-width: 540px) {
+			width: 300px !important;
+			height: 150px !important;
+		}	
+}
 
-// ----------------Break
+// ----------------------------------------------------------BREAK
 
 .break{
 	width:100%;
@@ -119,7 +173,7 @@ nav{
 box-shadow: 0px -14px 52px 0px rgba(0,0,0,0.75);
 }
 
-// ----------------Section1
+// ----------------------------------------------------------FIRST SECTION
 
 section{
 	@include span-columns(12);
@@ -127,33 +181,80 @@ section{
 	min-height:400px;
 	background:black;
 	.left-col{
-		@include span-columns(6);
+		@include span-columns(5);
 		position:relative;
 		height:400px;
 		display:flex; 
 		justify-content:center;
 		align-items:center;
 		margin: 0px;
+		@media (max-width: 768px) {
+			@include span-columns(12);
+			position:relative;
+			height:250px;
+			display:flex; 
+			justify-content:center;
+			align-items:center;
+			margin: 0px;
+		}
 		.prof-pic{
 			position:relative; 
 			height: 300px; 
 			width:300px; 
 			background-image: url("/lib/imgs/headshot.png"); 
 			background-size:cover; 
+		@media (max-width: 768px) {
+			width: 200px !important;
+			height: 200px !important;
+			top: 15px;
+		}
+		@media (max-width: 540px) {
+			width: 150px !important;
+			height: 150px !important;
+		}	
 		}
 	}
 	.right-col{
-		@include span-columns(6);
+		@include span-columns(7);
 		position:relative;
 		height:400px;
 		display:flex; 
-		justify-content:center;
+		justify-content:left;
 		align-items:center;
+		@media (max-width: 768px) {
+			@include span-columns(12);
+			position:relative;
+			height:200px;
+			display:flex; 
+			justify-content:left;
+			align-items:center;
+		}
+		p{
+			position:relative;
+			color: white;
+			font-family: $fontstack;
+			line-height: 2em;
+
+			@media (max-width: 768px) {
+			line-height: 1.5em;
+			margin: 0 25px 0 25px;
+			text-align:center;
+			}
+			@media (max-width: 540px) {
+			line-height: 1.2em;
+			bottom:10px;
+			}
+		}
+		// @media (max-width: 768px) {
+		// 	width: 400px !important;
+		// 	height: 200px !important;
+		// }
+		// @media (max-width: 540px) {
+		// 	width: 300px !important;
+		// 	height: 150px !important;
+		// }	
 	}
 }
-
-
-
 
 
 
