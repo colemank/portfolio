@@ -1940,6 +1940,28 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/lib\/imgs\/headshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/lib\/imgs\/headshot.png",
+		"outputAbbreviatedPath": "\/lib\/imgs\/headshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/lib\/imgs\/hero-name.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69022,
+		"inputAbbreviatedPath": "\/lib\/imgs\/hero-name.png",
+		"outputAbbreviatedPath": "\/lib\/imgs\/hero-name.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/lib\/imgs\/logo-_v2.png": {
 		"fileType": 32768,
 		"ignore": 0,

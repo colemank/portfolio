@@ -21,8 +21,11 @@ h3 {
   font-family: lato;
   color: black; }
 
+.clear {
+  clear: both; }
+
 .home-container {
-  position: fixed;
+  position: relative;
   height: 100%;
   width: 100%; }
 
@@ -36,9 +39,9 @@ nav {
   height: 100px;
   width: 100%;
   background: white;
-  -webkit-box-shadow: 0px 14px 89px 12px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 14px 89px 12px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 14px 89px 12px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 0px 14px 53px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 53px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 53px 0px rgba(0, 0, 0, 0.75); }
   nav:last-child {
     margin-right: 0; }
   nav .logo {
@@ -81,6 +84,13 @@ nav {
         font-family: helvetica;
         font-size: 1.2em;
         margin: 0 15px 0 15px; }
+        nav .links ul li a {
+          color: black;
+          text-decoration: none; }
+          nav .links ul li a:hover {
+            color: #00637C;
+            text-shadow: 0px 5px 10px black;
+            transition: .5s; }
 
 .hero-wrapper {
   float: left;
@@ -89,14 +99,12 @@ nav {
   width: 100%;
   position: relative;
   min-height: 100%;
-  min-width: 100%;
   background-image: url("/lib/imgs/sd-skyline.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  display: -webkit-flex;
-  display: flex;
-  margin-top: 100px; }
+  margin-top: 100px;
+  display: flex; }
   .hero-wrapper:last-child {
     margin-right: 0; }
 
@@ -105,15 +113,71 @@ nav {
   display: block;
   margin-right: 2.3576515979%;
   width: 100%;
-  width: 100%;
+  min-height: 100%;
   position: relative;
-  display: -webkit-flex;
   display: flex;
+  align-items: center;
   justify-content: center; }
   .primary-title:last-child {
     margin-right: 0; }
 
-.secondary-title {
+.title-style {
   position: relative;
-  display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  background-image: url("/lib/imgs/hero-name.png");
+  background-size: contain; }
+
+.break {
+  width: 100%;
+  height: 100px;
+  background: white;
+  position: relative;
+  -webkit-box-shadow: 0px -14px 52px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -14px 52px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -14px 52px 0px rgba(0, 0, 0, 0.75); }
+
+section {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  position: relative;
+  min-height: 400px;
+  background: black; }
+  section:last-child {
+    margin-right: 0; }
+  section .left-col {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; }
+    section .left-col:last-child {
+      margin-right: 0; }
+    section .left-col .prof-pic {
+      position: relative;
+      height: 300px;
+      width: 300px;
+      background-image: url("/lib/imgs/headshot.png");
+      background-size: cover; }
+  section .right-col {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section .right-col:last-child {
+      margin-right: 0; }
